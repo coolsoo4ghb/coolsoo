@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Penta Prism</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2010-11-10 17:47:24</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Penta Prism</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><span class="Apple-style-span" style="font-size: large;">Ref :&nbsp;</span><a href="http://blog.naver.com/bbbean?Redirect=Log&amp;logNo=30003525064"><span class="Apple-style-span" style="font-size: large;">http://blog.naver.com/bbbean?Redirect=Log&amp;logNo=30003525064</span></a><div><span class="Apple-style-span" style="font-size: large;"><br></span></div><div><a href="http://cafe.naver.com/35mmadapter.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=1168"><span class="Apple-style-span" style="font-size: large;">http://cafe.naver.com/35mmadapter.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=1168</span></a></div><div><span class="Apple-style-span" style="font-size: large;"><br></span></div><div><a href="http://kin.naver.com/qna/detail.nhn?d1id=5&amp;dirId=50102&amp;docId=102036293&amp;qb=7Y6c7YOA7ZSE66as7KaY&amp;enc=utf8&amp;section=kin&amp;rank=3&amp;search_sort=0&amp;spq=0&amp;pid=gLpUswoi5UZssve9ayosss--486364&amp;sid=TNpXAzNQ2kwAADR9B98"><span class="Apple-style-span" style="font-size: large;">http://kin.naver.com/qna/detail.nhn?d1id=5&amp;dirId=50102&amp;docId=102036293&amp;qb=7Y6c7YOA7ZSE66as7KaY&amp;enc=utf8&amp;section=kin&amp;rank=3&amp;search_sort=0&amp;spq=0&amp;pid=gLpUswoi5UZssve9ayosss--486364&amp;sid=TNpXAzNQ2kwAADR9B98</span></a></div><div><span class="Apple-style-span" style="font-size: large;"><br></span></div><div><img src='./1812237/f0032479_4cda5bbb5914f.jpg'></div><div><img src='./1812237/f0032479_4cda5bc78f261.jpg'><img src='./1812237/f0032479_4cda5bcf04aa4.jpg'></div><div><span class="Apple-style-span" style="font-size: large;">결상으로 꼬인 빛을 한번 더 꼬아서 입력 필드대로 보이게 만든다...</span></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

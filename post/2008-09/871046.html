@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Laser Tracker</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2008-09-25 16:03:54</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Laser Tracker</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref : <a href="http://www.optical-metrology-centre.com/"><span style="COLOR: #6699cc">http://www.optical-metrology-centre.com/</span></a><br><div><br>A Laser tracker provides a relatively fast, accurate and intuitive method of measuring large objects in industrial environments </div><div><br><strong>What does it do? </strong></div><div>Measure the three-dimensional location of a mobile target with an accuracy of a few microns, over a range of tens of metres</div><div></div><div><strong>Why use this technique? </strong></div><div>Laser trackers provide fast measurement of a target which can be moved almost anywhere within line-of-sight of the base unit. A key factor in favour of the Tracker is the high relative accuracy that can be achieved. As a consequence Laser Trackers have largely superceded more traditional methods such as Theodolites or conventional metrology tools such as collimators.</div><div></div><div><strong>How do laser trackers work?</strong></div><div>Laser trackers are based on the combination of two techniques: a laser interferometer to measure relative distance, and optical encoders to measure azimuth and elevation of a beam-steering mirror. Linear interferometers are a standard industrial measurement tool. They work on the principle of light interference.</div><div>(Fig Ref : <a href="http://www.directindustry.com/prod/api-automated-precision/laser-tracker-15655-43440.html"><span style="COLOR: #6699cc">http://www.directindustry.com/prod/api-automated-precision/laser-tracker-15655-43440.html</span></a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='./871046/f0032479_48db3760a99e3.jpg'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='./871046/f0032479_48db3777569ec.jpg'></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
