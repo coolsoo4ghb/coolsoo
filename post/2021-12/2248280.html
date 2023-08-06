@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>사진 줄무늬 현상 - 플리커 현상?</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2021-12-05 22:13:46</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">사진 줄무늬 현상 - 플리커 현상?</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://blog.naver.com/winsweet/222179844470<div>https://www.youtube.com/watch?v=bTvetA7LDe0</div><div><br></div><div>1. Light Source의 깜빡거림?</div><div><span style="font-size: 9pt;">2. Detector - rolling shutter effect?</span></div><div>&nbsp; &nbsp; Sony Exmor RS - CMOS, Back Side Illumination, NIR enhancement, maybe rolling shutter</div><div>&nbsp; &nbsp; Sony Pregius : global shutter CMOS</div><div><br></div><div>[Ref.1]</div><div>줄무늬 없이 깨끗하게 쵤영된 이 사진은 셔터스피드를 1/25초로 세팅한 결과입니다. 셔터스피드가 느리게 설정하니 플리커 현상이 완정히 사라진 것을 확인할 수 있어요.</div><div><br></div><div>카메라의 수동모드를 이용해도 되지만, 간편하게 쓰고 싶다면 셔터 우선 모드로 설정하고 셔터 속도를 조절하면서 줄무늬가 사라지는 적정 속도를 찾으면 됩니다.</div><div><br></div><div><br></div><div>[Ref.2]</div><div><img src='./2248280/f0032479_61acba907137f.png'></div><div><img src='./2248280/f0032479_61acba9db972f.png'></div><div><img src='./2248280/f0032479_61acbaa67a4cd.png'></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
