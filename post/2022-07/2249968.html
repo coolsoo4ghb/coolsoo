@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>T2SL</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-07-10 19:05:29</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">T2SL</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://www.researchgate.net/publication/321118143_Progress_on_type-II_InAsGaSb_superlattice_T2SL_infrared_photodetector_from_MWIR_to_VLWIR_spectral_domains<div><br></div><div><span style="color: rgb(77, 81, 86); font-family: &amp;quot;Apple SD Gothic Neo&amp;quot;, arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">type-II InAs/GaSb superlattice (</span><span style="font-weight: bold; color: rgb(95, 99, 104); font-family: &amp;quot;Apple SD Gothic Neo&amp;quot;, arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">T2SL</span><span style="color: rgb(77, 81, 86); font-family: &amp;quot;Apple SD Gothic Neo&amp;quot;, arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">) infrared photodetector</span></div><div><span style="color: rgb(77, 81, 86); font-family: &amp;quot;Apple SD Gothic Neo&amp;quot;, arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><br></span></div><div><a href='http://pds27.egloos.com/pds/202207/10/79//Progress_on_type-II_InAsGaSb_superlattice_T2SL_inf.pdf' target='_blank'>Progress_on_type-II_InAsGaSb_superlattice_T2SL_inf.pdf</a></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>PST, PSNIT</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-11-19 21:56:42</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">PST, PSNIT</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://www.photonics.com/Articles/Optical_System_Optimization_Analyzing_the/a61737<div>https://lavinia.as.arizona.edu/~minimaestro/MAESTRO/Construction/References/bropn1157_straylight.pdf</div><div><br></div><div><br></div><div><span style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><u><b>Point source transmittance (PST)</b></u> is the oldest stray light metric dating back to the 1970s and is conceptually very simple: Following from linear system theory, PST is simply the ratio of some measure of energy on the detector to the energy incident into the system, as a function of angle of incidence.</span></div><div><span style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><br></span></div><div><img src='./2251099/f0032479_6378d251f0132.jpg'></div><div><span style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255);"><br></span></div><div>The PST is also known as the normalized detectorirradiance (NDI) and the <font size="4"><b><u>point source normalized irradiance transmission (PSNIT).</u></b></font></div><div><br></div><div>The PST is basically a signal to noise ratio of the entrance pupil irradiance of a point source to the scattered light detector irradiance as a function of field angle. It is also a function of position on the detector, which can be analyzed with the SPOTS POSITION command, which computes irradiance.The PST is a common measure of scattered light performance in classical satellite imaging optical systems.&nbsp;</div><div><br></div><div><b><font size="4"><u>PSNIT (Point Source Normal Incidence Transmittance)</u></font></b></div><div><b><font size="4"><br></font></b></div><div><b><font size="4"><br></font></b></div><div><a href='http://pds27.egloos.com/pds/202211/19/79//bropn1157_straylight.pdf' target='_blank'>bropn1157_straylight.pdf</a></div><div><br></div><div><b><font size="4"><br></font></b></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

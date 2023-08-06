@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>빙하의 부피</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-10-19 20:22:29</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">빙하의 부피</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=%EC%96%BC%EC%9D%8C%EC%9D%98+%EB%B0%80%EB%8F%84<div>https://blog.naver.com/atago59/222420615775</div><div><br></div><div>빙하의 부피 : V0</div><div>빙하의 밀도 : rho_ice = 921.1 kg/m3 (백두산 천지 얼음 1월 평균 밀도)</div><div><br></div><div>바닷물속 빙하의 부피 : V1</div><div>바닷물의 밀도 : rho_sea = 1027.8 kg/m3 (해수 35psu, 4degC 기준)</div><div><br></div><div>아르키메데스의 원리:</div><div>rho_ice * V0 = rho_sea * V1</div><div><br></div><div>V1/V0 = rho_sea / rho_ice = 0.896</div><div><br></div><div><u>물속에 잠긴 빙하의 부피는 89.6%</u></div><div><u><br></u></div><div><u><br></u></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

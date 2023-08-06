@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Point in/out in Convex Rectangular</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-08-20 20:08:03</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Point in/out in Convex Rectangular</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://gpgstudy.com/forum/viewtopic.php?t=12374<div><br></div><div>Convex Rectangular A(1)A(2)A(3)A(4)</div><div>Point P</div><div><br></div><div>P is in the Convex rectangular</div><div>if</div><div>n = A(1)A(2) x A(2)A(3)</div><div>(A(1)A(2) x A(1)P) . n &gt; 0</div><div><div>(A(2)A(3) x A(2)P) . n &gt; 0</div><div><div>(A(3)A(4) x A(3)P) . n &gt; 0</div><div><div>(A(4)A(1) x A(4)P) . n &gt; 0</div><div><br></div></div></div></div><div><br></div><div><br></div><div><b>세 점을 지나는 평면의 방정식</b></div><div>Ref :&nbsp;http://www.gisdeveloper.co.kr/?p=801</div><div><br></div><div><p style="box-sizing: inherit; font-family: ffNoto; margin-bottom: 1.5em; color: rgb(51, 51, 51); font-size: 16px; background-color: rgb(255, 255, 255);">평면의 방정식은 아래처럼 기술할 수 있으며, (A, B, C)는 평면에 대한 법선(수직) 백터이고.. D는 이 법선 백터의 길이(크기)입니다. (x,y,z)는 평면상의 임이의 점입니다.</p><p style="box-sizing: inherit; font-family: ffNoto; margin-bottom: 1.5em; color: rgb(51, 51, 51); font-size: 16px; background-color: rgb(255, 255, 255);"><img class="aligncenter" src="http://www.gisdeveloper.co.kr/wp-content/uploads/1/1396906783.gif" alt="사용자 삽입 이미지" width="216" height="30" style="box-sizing: inherit; border-style: none; height: auto; max-width: 100%; clear: both; display: block; margin-left: auto; margin-right: auto; letter-spacing: 0px !important;" /><br style="box-sizing: inherit; letter-spacing: 0px !important;" />평면은 최소한 점 3개가 정해지면 평면의 방정식이 명확히 정의됩니다. 즉, 평면 상의 (x1,y1,z1)과 (x2, y2, z2) 그리고 (x3, y3, z3)가 정해지면 위의 공식에서 A, B, C, D의 값이 정해진다는 의미입니다. 각 A,B,C,D는 정해진 점들에 대해서 다음과 같은 행렬식으로 정의되며…</p><p style="box-sizing: inherit; font-family: ffNoto; margin-bottom: 1.5em; color: rgb(51, 51, 51); font-size: 16px; background-color: rgb(255, 255, 255);"><img loading="lazy" class="aligncenter" src="http://www.gisdeveloper.co.kr/wp-content/uploads/1/1282846303.jpg" alt="사용자 삽입 이미지" width="181" height="345" style="box-sizing: inherit; border-style: none; height: auto; max-width: 100%; clear: both; display: block; margin-left: auto; margin-right: auto; letter-spacing: 0px !important;" /><br style="box-sizing: inherit; letter-spacing: 0px !important;" />위의 행렬식은 다음과 같이 다시 한번 전개가 됩니다.</p><p style="box-sizing: inherit; font-family: ffNoto; margin-bottom: 1.5em; color: rgb(51, 51, 51); font-size: 16px; background-color: rgb(255, 255, 255);"><img loading="lazy" class="aligncenter" src="http://www.gisdeveloper.co.kr/wp-content/uploads/1/1246041557.jpg" alt="사용자 삽입 이미지" width="495" height="195" style="box-sizing: inherit; border-style: none; height: auto; max-width: 100%; clear: both; display: block; margin-left: auto; margin-right: auto; letter-spacing: 0px !important;" /><br style="box-sizing: inherit; letter-spacing: 0px !important;" />결국 이렇게 구한 A,B,C,D로부터 평면의 방정식이 결정되게 됩니다.</p><p style="box-sizing: inherit; font-family: ffNoto; margin-bottom: 1.5em; color: rgb(51, 51, 51); font-size: 16px; background-color: rgb(255, 255, 255);"><br></p><p style="box-sizing: inherit; font-family: ffNoto; margin-bottom: 1.5em; color: rgb(51, 51, 51); font-size: 16px; background-color: rgb(255, 255, 255);"><br></p></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>실상과 허상</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-05-16 18:23:23</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">실상과 허상</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://javalab.org/lens/<div><br></div><div><h2 style="overflow-wrap: break-word; border: none; margin: 36px 0px 12px; padding: 0px; vertical-align: baseline; font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; line-height: 26.4px; color: rgb(34, 34, 34); font-size: 22px; background-color: rgb(255, 255, 255);">실상과 허상</h2><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">어떤 물체를 보면서, 우리는 그 곳에 물체가 있다고 느낍니다. 그런데 물체나 발광체가 그곳에 없는데도, 어떤 반사체 또는 발광체가 그곳에 있다고 느끼는 경우 우리는 그곳에 ‘상(image)’이 있다고 말합니다.<br>광학에서 말하는 ‘상(image)’은 빛이 굴절 혹은 반사되어서 생깁니다.</p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">실상(Real image): 실제로 빛이 그곳에서 모였다가 다시 출발하는 경우를 말합니다. 실상이 맺혀지는 위치에 종이를 대보면 종이에 맺힌 상이 실제로 보입니다.</p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">허상(Virtual image): ‘상’이 맺힌 곳에 실제로 빛이 존재하지 않는 경우를 말합니다. 허상이 맺혀지는 위치에 종이를 대보면 아무런 상이 나타나지 않습니다.</p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);"><br></p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);"><img src='./2249534/f0032479_628217c43291f.jpg'></p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);"><img src='./2249534/f0032479_628217c943bba.jpg'></p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);"><img src='./2249534/f0032479_628217da3963a.jpg'></p><p style="overflow-wrap: break-word; border: none; margin-bottom: 15px; vertical-align: baseline; font-size: medium; color: rgb(34, 34, 34); font-family: &amp;quot;Open Sans&amp;quot;, Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255);"><br></p></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

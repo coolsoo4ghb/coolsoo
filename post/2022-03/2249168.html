@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Relative illumination, cosine fourth law</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-03-27 19:17:32</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Relative illumination, cosine fourth law</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;http://dougkerr.net/Pumpkin/articles/Cosine_Fourth_Falloff.pdf<div>https://www.youtube.com/watch?v=eZPDX2JEIPk</div><div><br></div><div>&nbsp;</div><div><img src='./2249168/f0032479_6240394766177.jpg'></div><div><br></div><div><div>radiance : L</div><div>irradiance : E</div><div><br></div></div><div>E0 is the film illuminance (for a given scene luminance) at apoint on-axis, EΘ is the illuminance (for that same scene luminance) ata point off-axis</div><div><br></div><div><img src='./2249168/f0032479_624039662c042.jpg'></div><div><br></div><div><br></div><div><div>&nbsp;ΘΝ is the angle by which the object point is off-axis, measured (in object space) from the center of the entrance pupil.</div><div><br></div><div><img src='./2249168/f0032479_62403978b7ab2.jpg'></div><div><br></div><div><br></div></div><div>ΘX is the angle by which the image point is off-axis, this timemeasured (in image space) from the center of the exit pupil.</div><div><br></div><div><img src='./2249168/f0032479_62403981c1730.jpg'></div><div><br></div><div><img src='./2249168/f0032479_6240398e70af0.jpg'></div><div><br></div><div><a href='http://pds18.egloos.com/pds/202203/27/79//Cosine_Fourth_Falloff.pdf' target='_blank'>Cosine_Fourth_Falloff.pdf</a></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

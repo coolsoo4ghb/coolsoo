@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Zemax macro example</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-04-24 17:14:27</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Zemax macro example</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div><br></div><div><div># distortion model</div><div>Print "distortion model generation"</div><div><br></div><div>Hx1 = -0.629</div><div>Hx2 = 0.629</div><div>delhx = Hx2-Hx1</div><div>Nstepx = 10</div><div><br></div><div>Hy1 = -0.778</div><div>Hy2 = -0.5</div><div>delhy = Hy2-Hy1</div><div>Nstepy = 5</div><div><br></div><div>format .10</div><div>For i,0,Nstepx,1</div><div>For j,0,Nstepy,1</div><div>&nbsp; Hx = Hx1 + delhx/Nstepx*i</div><div>&nbsp; Hy = Hy1 + delhy/Nstepy*j</div><div><br></div><div>&nbsp; # raytrace for chief ray</div><div>&nbsp; RAYTRACE Hx,Hy,0,0</div><div>&nbsp; x = RAYX(21)</div><div>&nbsp; y = RAYY(21)</div><div>&nbsp; lx = RAYL(0)</div><div>&nbsp; ly = RAYM(0)</div><div>&nbsp; lz = RAYN(0)</div><div>&nbsp; PRINT "x= ",x,"<span style="white-space:pre"></span>y= ",y,"<span style="white-space:pre"></span>lx= ",lx,"<span style="white-space:pre"></span>ly= ",ly,"<span style="white-space:pre"></span>lz= ",lz</div><div><br></div><div>Next</div><div>Next</div><div><br></div></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>matlab fit(), fittype()</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-01-09 20:28:06</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">matlab fit(), fittype()</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div>% curve fitting : y = A*(1 - exp(-b*t))</div><div><span style="font-size: 9pt;">%&nbsp; find A &amp; b</span></div><div>%</div><div>clear;</div><div>t = [0<span style="white-space:pre"></span>1.04<span style="white-space:pre"></span>6.06<span style="white-space:pre"></span>8.06]';</div><div>y = [0<span style="white-space:pre"></span>-1.099408<span style="white-space:pre"></span>-2.02742<span style="white-space:pre"></span>-2.214568]';</div><div><br></div><div>ft = fittype('A*(1-exp(-b*t))','independent',{'t'}, ...</div><div>&nbsp; &nbsp; &nbsp;'coefficients',{'A','b'});</div><div>options=fitoptions('Method','NonlinearLeastSquares');</div><div>options.StartPoint=[-1.0&nbsp; 1.0];</div><div>[c2, gof2,oput2] = fit(t,y,ft,options);</div><div>%[c2, gof2,oput2] = fit(t,y,ft);</div><div>c2 % print curve fitted paramters</div><div><br></div><div>% plot</div><div>figure;</div><div>plot(t,y,'ob')</div><div>tt=[0:0.1:10]';</div><div>yy=ft(c2.A,c2.b,tt);</div><div>hold on</div><div>plot(tt,yy,'r')</div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

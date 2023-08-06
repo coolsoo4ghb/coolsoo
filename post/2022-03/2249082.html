@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>R-squared in Nonlinear regression</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2022-03-15 19:20:34</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">R-squared in Nonlinear regression</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;https://statisticsbyjim.com/regression/r-squared-invalid-nonlinear-regression/<div>https://www.ktpm.co.kr/m04/down.php?no=1783&amp;file_name=A-%C8%B8%B1%CD%BA%D0%BC%AE.pdf</div><div><br></div><div>SST : Sum of Square, Total</div><div>SSR : Sum of Square, Regression</div><div>SSE : Sum of Square, Error</div><div><br></div><div>measured data set as a vector: y = [y1, y2, y3, ..., yN]</div><div>regression data set as a vector : y^ = [y1^, y2^, ..., yN^]</div><div>error vector : e = [e1, e2, ..., eN] = [y1-y1^, ..., yN-yN^]</div><div><br></div><div>Define inner produce (a,b) = a1.b1 + a2.b2 + ... + aN.bN</div><div><br></div><div>SST = (y,y) = norm(y)^2</div><div>SSR = (y^,y^) = norm(y^)^2</div><div><span style="font-size: 9pt;">SSE = (e,e) = norm(e)^2</span></div><div><span style="font-size: 9pt;"><br></span></div><div>For linear regression,</div><div>SST = SSR + SSE</div><div>because y = y^ + e</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;norm(y)^2 = norm(y^)^2 + norm(e)^2 + 2 (y^,e)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(y^,e) = 0 : by the least-square fit of y^ (detailed proof is depend on you)</div><div><br></div><div>Definition of R2</div><div>R2 = SSR / SST (between 0 and 1)</div><div><br></div><div><br></div><div>For polynomial nonlinear regression</div><div>SST = SSR + SSE</div><div>because&nbsp;<span style="font-size: 9pt;">(y^,e) = 0 : by the least-square fit of y^ (detailed proof is depend on you)</span></div><div><br></div><div><br></div><div>For other types of nonlinear regression</div><div>There is no evidence that (y^,e)=0</div><div>Therefore, SST =~ SSR + SSE</div><div><br></div><div>Jim Forest says that "R-squared is not valid for nonlinear regression"</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
