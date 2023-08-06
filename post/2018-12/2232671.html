@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Humidity test</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2018-12-10 15:51:45</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Humidity test</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;http://dc.winmate.com.tw/_downloadCenter/2012/RuggedHandheld/1204DT0608_3.5%20Industrial%20PDA_R03C35T-RTE1_Fanless_MIL_G_Humidity%20Heat%20Test%20%20Report_100.pdf<div><br></div><div>Ref :&nbsp;http://edge.rit.edu/edge/R16301/public/Testing%20Specifications/Humidity%20MIL%20STD%20810G.pdf<a href='http://pds25.egloos.com/pds/201812/10/79//Humidity_MIL_STD_810G.pdf' target='_blank'>Humidity_MIL_STD_810G.pdf</a></div><div><br></div><div>MIL-STD-801G</div><div>Method 507.5</div><div>Figure 507-5-7</div><div><br></div><div><img src='./2232671/f0032479_5c0e0c91a508e.jpg'></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
