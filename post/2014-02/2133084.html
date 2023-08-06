@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Dahl dynamic friction model</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2014-02-18 23:29:28</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Dahl dynamic friction model</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;http://www.meccanicamente.org/papers/planarlinkage_coulomb2.pdf<div><br></div><div><div>The Dahl model [9, 10, 11, 12, 13] is based on the observations made during experimental</div><div>analyses on systems with ball bearings. He noted that, within a certain limit, input</div><div>forces were reacted by elastic restoring forces. These are due to the quantum mechanical</div><div>bonds between the surfaces in contact. These bonds break once the input force</div><div>exceeds a given limit. This behavior is somewhat similar to the one observed in material</div><div>deformation tests. Hence Dahl developed his continuous friction force-displacement</div><div>relationship on the base of the analogy with stress-strain behavior. Continuing with</div><div>this analogy, for Dahl the transition from static to kinetic friction corresponds to the</div><div>transition from elastic to plastic deformation in ductile materials. Hence, for low tensile</div><div>loads, a spring-like behavior is observed. After the relaxation of the load the system</div><div>returns into the original unstressed state. When the load is larger the bonds break and</div><div>the system will not return to its original state and an hysteresis appears.</div></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

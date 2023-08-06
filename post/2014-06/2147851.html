@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>RML, TML</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2014-06-20 23:30:49</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">RML, TML</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;http://www.aac-research.at/products/products_AAC_SpaceTesthouse_Outgassing_en.html<div>http://www.drb-mattech.co.uk/aerospace.html<br><div><br></div><div><img src="http://www.aac-research.at/images/Bilder-AAC/outgassing-curve.jpg" alt="outgassing-curve.jpg" /></div><div><br></div><div><font size="4"><br></font></div><div><img src='./2147851/f0032479_566aaf9448cc2.jpg'></div><div><font size="4"><br></font></div><div><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4">CVCM : Collected&nbsp;Volatile Condensible Material is the mass gain of the collector plates divided by the initial mass of the material</font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4"><br></font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4">RML : Recovered Mass Loss is the difference between initial mass and mass after re-climating (shows the amount on non-water products)</font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4"><br></font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4">TML :Total Mass Loss is the difference of mass directly before and after vacuum test (shows the amount of all outgassing products in percentage of initial mass)</font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4"><br></font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4">WVR :Water Vapour Regained is the amount of water uptake after vacuum test</font></div></li><li style="font-family: Arial, sans-serif; line-height: normal; background-color: rgb(255, 255, 255);"><div align=""><font size="4"><br></font></div></li></div></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

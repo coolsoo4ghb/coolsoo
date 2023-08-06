@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>viscosity</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2014-01-03 19:05:32</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">viscosity</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div>Ref :&nbsp;<a href="http://terms.naver.com/entry.nhn?docId=1981597&amp;cid=602&amp;categoryId=602" style="font-size: 9pt;">http://terms.naver.com/entry.nhn?docId=1981597&amp;cid=602&amp;categoryId=602</a></div><div>Ref :&nbsp;<a href="http://blog.naver.com/f1915?Redirect=Log&amp;logNo=20187231209" style="font-size: 9pt;">http://blog.naver.com/f1915?Redirect=Log&amp;logNo=20187231209</a></div><div>Ref :&nbsp;<a href="http://kin.naver.com/qna/detail.nhn?d1id=11&amp;dirId=1114&amp;docId=58773904&amp;qb=66y87J2YIOuPmeygkOyEseqzhOyImA==&amp;enc=utf8&amp;section=kin&amp;rank=2&amp;search_sort=0&amp;spq=0&amp;pid=RVjagdpySpZsssIYFVsssssssuK-504373&amp;sid=UsaFTQpyVpEAAA6vcdo" style="font-size: 9pt;">http://kin.naver.com/qna/detail.nhn?d1id=11&amp;dirId=1114&amp;docId=58773904&amp;qb=66y87J2YIOuPmeygkOyEseqzhOyImA==&amp;enc=utf8&amp;section=kin&amp;rank=2&amp;search_sort=0&amp;spq=0&amp;pid=RVjagdpySpZsssIYFVsssssssuK-504373&amp;sid=UsaFTQpyVpEAAA6vcdo</a></div><div><br></div>dynamic viscosity (mu) :&nbsp;<div>[SI unit] Pa.sec</div><div>[공학단위] P (poise) = 0.1 Pa.sec</div><div><br></div><div>kinematic viscosity (nu = mu/density)</div><div>[SI unit] m2/sec</div><div>[공학단위] St (stroke) = 1 cm2/sec = 10^-4 m2/sec</div><div><br></div><div><br></div><div>물의 dynamic viscosity</div><div>1.0050 cP at 20 degC</div><div>0.4061 cP at 70 degC</div><div><br></div><div>물의 kinematic viscosity</div><div>1.007E-6 m2/sec = 1.007 cSt at 20 degC</div><div>0.556E-6 m2/sec = 0.556 cSt at 50 degC</div><div><br></div><div>공기의 kinematic viscosity</div><div>1.515E-5 m2/sec = 15.15 cSt at 20 degC</div><div>1.785E-5 m2/sec = 17.85 cSt at 50 degC</div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

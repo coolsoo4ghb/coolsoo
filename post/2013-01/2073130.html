@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Inconel</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2013-01-24 00:17:48</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Inconel</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;http://terms.naver.com/entry.nhn?cid=2916&amp;docId=1587586&amp;mobile&amp;categoryId=2916<div><br></div><div><b><font size="4"><u><span style="color: rgb(68, 68, 68); font-family: 굴림, gulim, AppleGothic, sans-serif; line-height: 23px;">내열, 내식성&nbsp;</span><a href="http://terms.naver.com/entry.nhn?docId=653213" style="color: rgb(17, 114, 182); font-family: 굴림, gulim, AppleGothic, sans-serif; line-height: 23px;">니켈합금</a></u></font></b><span style="color: rgb(68, 68, 68); font-family: 굴림, gulim, AppleGothic, sans-serif; font-size: 13px; line-height: 23px;">을 말한다. 영국의 Henry Wiggins사가 개발한 Ni-Cr-Fe의 합금이며, 내산성으로 900℃이상의 사용에서도 산화되지 않기 때문에 고온계의 보호관, 전열기의 부품, 우유가공기, 항공기의 배기밸브 등에 사용되고 있다. Ni 80%, Cr 14%, Fe 6%의 합금이다.</span></div><div><span style="color: rgb(68, 68, 68); font-family: 굴림, gulim, AppleGothic, sans-serif; font-size: 13px; line-height: 23px;"><br></span></div><div><span style="color: rgb(68, 68, 68); font-family: 굴림, gulim, AppleGothic, sans-serif; font-size: 13px; line-height: 23px;">Fe-Ni-Cr의 주조 합금 금속으로서 내열(耐熱), 내산(耐酸), 고온 강도에 잘 견디는 특성으로 전열기(電熱器), 고온계(高溫計)의 보호관, 항공기의 배기 밸브 등에 사용된다.</span></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

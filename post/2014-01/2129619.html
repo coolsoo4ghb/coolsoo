@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Cleanliness Class</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2014-01-13 18:34:37</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Cleanliness Class</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><h3 style="background-image: none; background-color: rgb(255, 255, 255); margin: 0px 0px 0.3em; overflow: hidden; padding-top: 0.5em; padding-bottom: 0.17em; border-bottom-style: none; font-size: 17px; font-family: sans-serif; line-height: 19.1875px;">Ref :&nbsp;<a href="http://en.wikipedia.org/wiki/Cleanroom" style="font-family: 굴림; font-size: 9pt; font-weight: normal; line-height: 15px;">http://en.wikipedia.org/wiki/Cleanroom</a></h3><h3 style="background-image: none; background-color: rgb(255, 255, 255); margin: 0px 0px 0.3em; overflow: hidden; padding-top: 0.5em; padding-bottom: 0.17em; border-bottom-style: none; font-size: 17px; font-family: sans-serif; line-height: 19.1875px;"><span class="mw-headline"><br></span></h3><h3 style="background-image: none; background-color: rgb(255, 255, 255); margin: 0px 0px 0.3em; overflow: hidden; padding-top: 0.5em; padding-bottom: 0.17em; border-bottom-style: none; font-size: 17px; font-family: sans-serif; line-height: 19.1875px;"><span class="mw-headline">US FED STD 209E cleanroom standards</span><span class="mw-editsection" style="-webkit-user-select: none; font-size: small; font-weight: normal; margin-left: 1em; vertical-align: baseline; line-height: 1em; display: inline-block; white-space: nowrap; padding-right: 0.25em; unicode-bidi: -webkit-isolate;"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Cleanroom&amp;action=edit&amp;section=6" title="Edit section: US FED STD 209E cleanroom standards" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; background-position: initial initial; background-repeat: initial initial;">edit</a><span class="mw-editsection-bracket">]</span></span></h3><table class="centered" style="font-size: 13px; color: rgb(0, 0, 0); font-family: sans-serif; line-height: 19.1875px; background-color: rgb(255, 255, 255);"><tbody><tr><td></td></tr><tr><th rowspan="2">Class</th><td colspan="5" align="center"><b>maximum particles/ft<sup style="line-height: 1em;">3</sup></b></td><th rowspan="2">ISO<br>equivalent</th></tr><tr><th>≥0.1&nbsp;µm</th><th>≥0.2&nbsp;µm</th><th>≥0.3&nbsp;µm</th><th>≥0.5&nbsp;µm</th><th>≥5&nbsp;µm</th></tr><tr><th>1</th><td align="right">35</td><td align="right">7.5</td><td align="right">3</td><td align="right">1</td><td align="right">0.007</td><td align="center">ISO 3</td></tr><tr><th>10</th><td align="right">350</td><td align="right">75</td><td align="right">30</td><td align="right">10</td><td align="right">0.07</td><td align="center">ISO 4</td></tr><tr><th>100</th><td align="right">3,500</td><td align="right">750</td><td align="right">300</td><td align="right">100</td><td align="right">0.7</td><td align="center">ISO 5</td></tr><tr><th>1,000</th><td align="right">35,000</td><td align="right">7,500</td><td align="right">3000</td><td align="right">1,000</td><td align="right">7</td><td align="center">ISO 6</td></tr><tr><th>10,000</th><td align="right">350,000</td><td align="right">75,000</td><td align="right">30,000</td><td align="right">10,000</td><td align="right">70</td><td align="center">ISO 7</td></tr><tr><th>100,000</th><td align="right"><span style="white-space: nowrap;">3.5<span style="margin-left: 0.25em; margin-right: 0.15em;">×</span>10<sup style="line-height: 1em;">6</sup></span></td><td align="right">750,000</td><td align="right">300,000</td><td align="right">100,000</td><td align="right">700</td><td align="center">ISO 8<br><br></td></tr></tbody></table><br><div>ISO 5 = Class 100</div><div>ISO 6 = Class 1000</div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>LA 한인수</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2013-05-02 00:33:04</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">LA 한인수</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div>최근 자료 별로 없네</div><div><br></div>Ref :&nbsp;http://news.naver.com/main/read.nhn?mode=LSD&amp;mid=sec&amp;sid1=100&amp;oid=001&amp;aid=0002880266<div><br></div><div>2008년 미국 한인수 : 134만명 추산</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 캘리포니아 : 43.9만</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LA 근교 : 28.3만</div><div><br></div><div>Ref :&nbsp;http://www.dongponews.net/news/articleView.html?idxno=22921</div><div><br></div><div>2009년 한국 외교부 발표 재미 한인 : 210.2만명</div><div><br></div><div><br></div><div><br></div><div>Ref :&nbsp;http://blog.daum.net/tjdfkrtjs1105/2560</div><div><br></div><div>2012년 11월 기준</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 대전광역시 인구 : 152만</div><div>&nbsp; &nbsp; &nbsp; &nbsp; 유성구 : 30.5만&nbsp;</div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

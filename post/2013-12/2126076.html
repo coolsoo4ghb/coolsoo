@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>구글맵에서 위도 경도 알아내기</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2013-12-14 17:19:08</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">구글맵에서 위도 경도 알아내기</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;<a href="http://terminee.tistory.com/759">http://terminee.tistory.com/759</a><div><br></div><div><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);">1. 구글 맵에서 원하는 위치를 화면 가운데로 가져옵니다.</span><br style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);" /><br style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);" /><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);">2. 주소창에 다음 코드를 집어넣고 엔터를 빵!</span><br style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);" /><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);">javascript:void(prompt('',gApplication.getMap().getCenter()));</span><br style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);" /><br style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);" /><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);">3. 무시무시한 소수점을 가진 위도, 경도 값이 표시됩니다.</span></div><div><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);"><br></span></div><div><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);">저 코드를 북마크로 만들어 놓으면 매번 타이핑 할 필요가 없네요</span></div><div><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);"><br></span></div><div><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);"><br></span></div><div><span style="color: rgb(102, 102, 102); font-family: Verdana, dotum; line-height: 17px; background-color: rgb(255, 255, 255);">Ref :&nbsp;</span><a href="http://blog.naver.com/clxm300?Redirect=Log&amp;logNo=10148706821" style="font-size: 9pt;">http://blog.naver.com/clxm300?Redirect=Log&amp;logNo=10148706821</a></div><div><br></div><div><a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm">http://universimmedia.pagesperso-orange.fr/geo/loc.htm</a></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
