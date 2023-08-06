@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>M18 resin</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2015-12-01 10:47:48</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">M18 resin</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;<a href="http://www.hexcel.com/Resources/DataSheets/Prepreg-Data-Sheets/M18_eu.pdf">http://www.hexcel.com/Resources/DataSheets/Prepreg-Data-Sheets/M18_eu.pdf</a><div><br></div><div><br></div><div><div>HexPly M18 has been developed to fulfil the requirements of the aerospace industry for primary structures</div><div>using standard manufacturing processes. The matrix has improved properties which allow easy lay-up,</div><div>good tack life and a good component surface finish. A low moisture uptake allows good hot/wet</div><div>performance up to 150°C and a general service temperature up to 180°C.</div></div><div><br></div><div><br></div><div><div>Benefits and Features</div><div>- Low density matrix offering potential weight saving</div><div>- Excellent toughness and damage tolerance</div><div>- Outstanding low moisture uptake</div><div>- Simple straight up cure cycle (no post cure needed)</div><div>- High strain to failure</div><div>- Good hot/wet properties up to 150°C</div><div>- Processes to a good surface finish on components</div><div>- Suitable for low pressure moulding</div></div><div><br></div><div><a href='http://pds25.egloos.com/pds/201512/01/79//M18_eu.pdf' target='_blank'>M18_eu.pdf</a></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

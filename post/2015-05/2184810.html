@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>ICP Accelerometer</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2015-05-12 00:17:01</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">ICP Accelerometer</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;http://www.signallink.co.kr/kr/bbs/board.php?bo_table=faq&amp;wr_id=13<div>http://en.wikipedia.org/wiki/Integrated_circuit_piezoelectric_sensor</div><div><br></div><div><b style="color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; line-height: 22.3999996185303px; background-color: rgb(255, 255, 255);">integrated circuit piezoelectric sensor</b><span style="color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; line-height: 22.3999996185303px; background-color: rgb(255, 255, 255);">&nbsp;or&nbsp;</span><b style="color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; line-height: 22.3999996185303px; background-color: rgb(255, 255, 255);">ICP sensor</b></div><div><b style="color: rgb(37, 37, 37); font-family: sans-serif; font-size: 14px; line-height: 22.3999996185303px; background-color: rgb(255, 255, 255);"><br></b></div><div><p style="font-family: Tahoma, 굴림; font-size: 12px; color: rgb(34, 34, 34); line-height: normal; background-color: rgb(255, 255, 255);"><span style="font-size: larger;"><span style="font-family: Arial;">가속도계(가속도진동센서, Accelerometer)는&nbsp;<span lang="EN-US">1880년 프랑스 피에르 형제에 의하여&nbsp;</span>압전효과를 갖는 물질이 발견된 이후, 다양한&nbsp;<span lang="EN-US">센서(그림 A)로 응용, 발전되어 왔습니다.</span>&nbsp;<span lang="EN-US">압전소자(Piezo-electric material)위에 부착된 질량이 움직일 때 압전소자에 작용하는 관성력(Inertia force)를 측정하고, 관성질량으로 관성력을 나누어 줌으로써 진동가속도를 측정해 낼 수 있습니다.&nbsp; 동작원리상 가속도계는 진동하는 물체에 가장 확실하게 부착되어 함께 진동할 수 있도록&nbsp;&nbsp;<strong>고정방법</strong>에 유의하여야 합니다. - 본 내용 -&gt;&nbsp;FAQ 8 참조</span></span></span></p><p style="font-family: Tahoma, 굴림; font-size: 12px; color: rgb(34, 34, 34); line-height: normal; background-color: rgb(255, 255, 255);"><span style="font-size: larger;"><span style="font-family: Arial;">그림 (B)에서와 같이 예전의 가속도계는 센서에서 발행하는 pC 단위의 미소전하량을 계측기에서 볼 수 있는 단위로 증폭하기 위하여 전하증폭기(Charge Amplifier)를 사용하였으며, 최근에는 그림 (C)에서와 같이 센서내에 증폭회로를 삽입하여 센서에서 출력값이 mV단위가 발생하는 ICP센서(또는 Voltage Type 센서)가 최근에는 많습니다.&nbsp; Charge Type은 센서증폭회로를 구동하기 위한 외부전압이 필요없고, 응답성이 빠른 장점이 있으나 별도의 전하증폭기를 구비해야한다는 단점이 있으며, Voltage Type센서는 센서가 안정되기 까지 약간의 시간이 소요되는 단점이 있으나, 사용하기 쉽고 간단한 장점이 있습니다.</span></span></p><p style="font-family: Tahoma, 굴림; font-size: 12px; color: rgb(34, 34, 34); line-height: normal; background-color: rgb(255, 255, 255);"><span style="font-size: larger;"><span style="font-family: Arial;"><br></span></span></p><p style="font-family: Tahoma, 굴림; font-size: 12px; color: rgb(34, 34, 34); line-height: normal; background-color: rgb(255, 255, 255);"><img src="http://www.signallink.co.kr/upload/editor/sensor.bmp" /></p></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

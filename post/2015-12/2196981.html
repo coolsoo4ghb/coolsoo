@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>L20 resin</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2015-12-04 11:14:43</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">L20 resin</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;<a href="http://www.knsroeselare.be/pdf/L20-SL.pdf">http://www.knsroeselare.be/pdf/L20-SL.pdf</a><div><a href="http://www.swiss-composite.ch/pdf/t-Epoxydharz-L20-e.pdf">http://www.swiss-composite.ch/pdf/t-Epoxydharz-L20-e.pdf</a></div><div><br></div><div><div>Rutapox®&nbsp;<span style="font-size: 9pt;">L 20 epoxy resin with a hardener from the family SL 25, SL 50, SL 75, SL&nbsp;</span><span style="font-size: 9pt;">produces a low viscosity laminating mixture with outstanding wetting and adhesion&nbsp;</span><span style="font-size: 9pt;">characteristics on glass, carbon and aramid fibres.</span></div></div><div><span style="font-size: 9pt;"><br></span></div><div><a href='http://pds25.egloos.com/pds/201512/04/79//L20-SL.pdf' target='_blank'>L20-SL.pdf</a></div><div><a href='http://pds25.egloos.com/pds/201512/04/79//t-Epoxydharz-L20-e.pdf' target='_blank'>t-Epoxydharz-L20-e.pdf</a></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

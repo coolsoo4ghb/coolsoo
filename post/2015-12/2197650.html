@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>week calendar</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2015-12-17 16:34:21</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">week calendar</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref : <a href="http://week-number.net/calendar-with-week-numbers-2016.html">http://week-number.net/calendar-with-week-numbers-2016.html</a><br><br>The year 2016s maximum week number is WN 52. 2016 starts on      Friday, January 1st 2016    and ends on Saturday, December 31st 2016.One year has up to 53 week numbers. The first week of the year (WN 1) is the week containing january 4th or the first tuesday of the Year.<br><br>1월 4일 또는 첫번째 화요일이 포함된 주가 W1<br><br><img src='./2197650/f0032479_5672655a795f8.png'></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
