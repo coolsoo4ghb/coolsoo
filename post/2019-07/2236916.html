@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>MAXRATIO</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2019-07-17 12:32:54</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">MAXRATIO</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;<a href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19950020950.pdf">https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19950020950.pdf</a><div><br></div><div><div><font size="4">During the solution process, NASTRAN decomposes symmetric structural matrices into&nbsp;</font><span style="font-size: large;">upper and lower triangular factors and a diagonal matrix, e.g.,</span></div><div><font size="4">K=LDL T</font></div><div><font size="4">where L is the lower triangular factor and D is called the "factor diagonal matrix." Note that&nbsp;</font><span style="font-size: large;">the upper triangular factor for a symmetric matrix is equal to L T. Symmetric decomposition,</span></div><div><font size="4">followed by forward/backward substitution, is a computationally efficient alternative to&nbsp;</font><span style="font-size: large;">matrix inversion.&nbsp;</span></div><div><span style="font-size: large;">An additional benefit of decomposition in MSC/NASTRAN is the</span></div><div><font size="4">diagnostic messages that alert the user to problems in the matrices. <b>Each diagonal term of&nbsp;</b></font><span style="font-size: large;"><b>K is divided by the corresponding term of the factor diagonal matrix, D</b>, and ratios larger&nbsp;</span><span style="font-size: large;">than PARAM,MAXRATIO are printed.&nbsp;</span></div><div><span style="font-size: large;">The number and location of any negative terms in&nbsp;</span><span style="font-size: large;">the factor diagonal matrix are also printed.</span></div></div><div><br></div><div><a href='http://pds20.egloos.com/pds/201907/17/79//19950020950.pdf' target='_blank'>19950020950.pdf</a></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

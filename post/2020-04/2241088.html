@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>matlab fopen load() fread() textscan() fprintf() feof()</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2020-04-12 22:01:20</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">matlab fopen load() fread() textscan() fprintf() feof()</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div>% read xxx data file</div><div>[file,dir] = uigetfile( ...</div><div>&nbsp; &nbsp; '*.dat','Choose xxx data File');</div><div>fileName=strcat(dir,file);</div><div>fid1 = fopen(fileName, 'r');</div><div>dat_nstep=load(fileName);</div><div>npoint1 = length(dat_nstep);</div><div>fclose(fid1);</div><div><br></div><div><br></div><div><br></div><div><div>% file open</div><div>[file,dir] = uigetfile( ...</div><div>&nbsp; &nbsp; '*.image','Choose xxx File');</div><div>fileName=strcat(dir,file);</div><div>fid = fopen(fileName, 'r');</div></div><div>~~~</div><div>imgdata = fread(fid, [2720,2720], 'ubit16','l')'; % little-endian</div><div>fclose(fid);</div><div><br></div><div><br></div><div><br></div><div><br></div><div><div>% file open--</div><div>[file,dir] = uigetfile( ...</div><div>&nbsp; &nbsp; '*.dat','Choose xxx data File');</div><div>fileName=strcat(dir,file);</div><div>fid = fopen(fileName, 'r');</div><div><br></div><div>aa = textscan(fid,'%f %f %f','HeaderLines',8);</div><div>np = length(aa{1});</div><div>disp = zeros(np,3);</div><div>for j=1:3;</div><div>&nbsp; &nbsp; disp(:,j)=aa{j};</div><div>end;</div><div>fclose(fid)</div></div><div><br></div><div><br></div><div><br></div><div><br></div><div><div>% file open--</div><div>[file,dir] = uigetfile( ...</div><div>&nbsp; &nbsp; '*.blk','Choose xxx File');</div><div>fileName=strcat(dir,file);</div></div><div><br></div><div><div>fid = fopen(fileName, 'r');</div><div>% read 3 lines</div><div>for k=1:3; string1=fgets(fid); end;</div></div><div>~~~</div><div><div>fclose(fid);</div></div><div><br></div><div><br></div><div><br></div><div><br></div><div><div>% write data to file 'aaa'</div><div>fid = fopen('aaa.dat', 'w');</div><div>for i=1:max_wfreq; fprintf(fid,'%-12.5e&nbsp; &nbsp;%-12.5e \n',wfreq(i),wpsdout(i));end;</div><div>fclose(fid);</div><div><br></div></div><div><br></div><div><br></div><div><br></div><div><br></div><div><div>while ~feof(fid1)</div><div>&nbsp; &nbsp; string1=fgets(fid1);</div><div>&nbsp; &nbsp; aa = sscanf(string1,'%e');</div><div>&nbsp; &nbsp; if(length(aa)==0); break; end;</div><div>&nbsp; &nbsp; i=i+1;</div><div>&nbsp; &nbsp; tfreq(i) = aa(1);</div><div>&nbsp; &nbsp; for ich=1:NBchannel;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; tpsd(i,ich) = aa(ich*2);</div><div>&nbsp; &nbsp; end;</div><div>end;</div></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

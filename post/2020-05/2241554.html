@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>NASTRAN Subcom Subseq</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2020-05-16 18:00:39</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">NASTRAN Subcom Subseq</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div>$-----------------</div><div>subcase 101</div><div>label = P1&nbsp;</div><div>SPC = 101&nbsp;</div><div>load = 111</div><div><br></div><div>subcase 102</div><div>label = P1&nbsp;</div><div>SPC = 101&nbsp;</div><div>load = 112</div><div><br></div><div>subcase 103</div><div>label = P2&nbsp;</div><div>SPC = 102&nbsp;</div><div>load = 113</div><div><br></div><div>subcase 104</div><div>label = P2</div><div>SPC = 102&nbsp;</div><div>load = 114</div><div><br></div><div>subcase 105</div><div>label = P3&nbsp;</div><div>SPC = 103&nbsp;</div><div>load = 115</div><div><br></div><div>subcase 106</div><div>label = P4&nbsp;</div><div>SPC = 103&nbsp;</div><div>load = 116</div><div>$-----------------</div><div>$</div><div>SUBCOM 201</div><div>LABEL = case 01</div><div>SUBSEQ =&nbsp; 1., 1. ,-1., 1., 1., 1.</div><div>$</div><div>SUBCOM 202</div><div>LABEL = case 02</div><div>SUBSEQ =&nbsp; 1., 1. ,-1., 1., 1., -1.</div><div>$</div><div>SUBCOM 203</div><div>LABEL = case 03</div><div>SUBSEQ =&nbsp; 1., 1. ,-1., 1., 1., 1.</div><div>$</div><div>SUBCOM 204</div><div>LABEL = case 04</div><div>SUBSEQ =&nbsp; 1., 1. ,-1., 1., 1., -1.</div><div>$</div><div>SUBCOM 205</div><div>LABEL = case 05</div><div>SUBSEQ =&nbsp; 1., -1. ,-1., -1., 1., 1.</div><div>$</div><div>SUBCOM 206</div><div>LABEL = case 06</div><div>SUBSEQ =&nbsp; 1., -1. ,-1., -1., 1., -1.</div><div>$</div><div>SUBCOM 207</div><div>LABEL = case 07</div><div>SUBSEQ =&nbsp; 1., -1. ,-1., -1., 1., 1.</div><div>$</div><div>SUBCOM 208</div><div>LABEL = case 08</div><div>SUBSEQ =&nbsp; 1., -1. ,-1., -1., 1., -1.</div><div>$</div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

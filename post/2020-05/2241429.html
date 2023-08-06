@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>matlab feof(), fprintf(), PBAR, GRID cord</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2020-05-07 21:16:25</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">matlab feof(), fprintf(), PBAR, GRID cord</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div>% PBAR -&gt; PBARL===============================================</div><div><br></div><div>% file open--</div><div>[file,dir] = uigetfile( ...</div><div>&nbsp; &nbsp; '*.dat','Choose prop data File');</div><div>fileName=strcat(dir,file);</div><div>fid1 = fopen(fileName, 'r');</div><div>% write file</div><div>fntmp1 = fileName(1:(length(fileName)-4));</div><div>fileName2 = strcat(fntmp1,'_tran.dat');</div><div>fid2 = fopen(fileName2, 'w');</div><div><br></div><div>% read whole file</div><div>i=0; % line counter</div><div>j=0; % anomaly counter</div><div>while ~feof(fid1)</div><div>&nbsp; &nbsp;&nbsp;</div><div>string1=fgets(fid1);i=i+1;</div><div>if(string1(1)=='$')</div><div>&nbsp; &nbsp; fprintf(fid2,'%s',string1);</div><div>end</div><div>if(string1(1:5)=='PBARL')</div><div>&nbsp; &nbsp; string2=fgets(fid1);i=i+1; % read more 1 line</div><div>&nbsp; &nbsp; fprintf(fid2,'%s',string1);</div><div>&nbsp; &nbsp; fprintf(fid2,'%s',string2);</div><div>end</div><div>% PBAR case</div><div>if(string1(1:5)=='PBAR ')</div><div>&nbsp; &nbsp; string2=fgets(fid1);i=i+1; % read more line</div><div>&nbsp; &nbsp; string3=fgets(fid1);i=i+1; % read more line</div><div>&nbsp; &nbsp; % extract data</div><div>&nbsp; &nbsp; nprop = sscanf(string1(9:16),'%d');</div><div>&nbsp; &nbsp; nmat = sscanf(string1(17:24),'%d');</div><div>&nbsp; &nbsp; area = sscanf(string1(25:32),'%e');</div><div>&nbsp; &nbsp; jval = sscanf(string1(49:56),'%e');</div><div>&nbsp; &nbsp; % calculate</div><div>&nbsp; &nbsp; r1 = sqrt(area/pi);</div><div>&nbsp; &nbsp; r2 = (jval*2/pi)^(1/4);</div><div>&nbsp; &nbsp; if(r1 ~= r2)&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; j=j+1; ano_prop(j,1)=nprop;&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; ano_prop(j,2)=r1; ano_prop(j,3)=r2;</div><div>&nbsp; &nbsp; end</div><div>&nbsp; &nbsp; % write</div><div>&nbsp; &nbsp; fprintf(fid2,'PBARL&nbsp; &nbsp;%8d%8d MSCBML0&nbsp; &nbsp; &nbsp;ROD&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; +\n',nprop,nmat);</div><div>&nbsp; &nbsp; fprintf(fid2,'+&nbsp; &nbsp; &nbsp; &nbsp;%8.3g&nbsp; &nbsp; &nbsp;0.0\n',r1);</div><div>end</div><div><br></div><div>&nbsp; &nbsp;&nbsp;</div><div>end</div><div><br></div><div><br></div><div><br></div><div><br></div><div><div>% Codr0 -&gt; Cord21=====================================================================</div><div><br></div><div>% file open--</div><div>[file,dir] = uigetfile( ...</div><div>&nbsp; &nbsp; '*.dat','Choose grid data File');</div><div>fileName=strcat(dir,file);</div><div>fid1 = fopen(fileName, 'r');</div><div>% write file</div><div>fntmp1 = fileName(1:(length(fileName)-4));</div><div>fileName2 = strcat(fntmp1,'_tran.dat');</div><div>fid2 = fopen(fileName2, 'w');</div><div><br></div><div>% parameters</div><div>CORD21 = 21;</div><div><br></div><div>% read whole file</div><div>i=0; % line counter</div><div>j=0; % change counter</div><div>while ~feof(fid1)</div><div>&nbsp; &nbsp;&nbsp;</div><div>string1=fgets(fid1);i=i+1;</div><div>% comment case</div><div>if(string1(1)=='$')</div><div>&nbsp; &nbsp; fprintf(fid2,'%s',string1);</div><div>% GRID case</div><div>elseif(string1(1:4)=='GRID')</div><div>&nbsp; &nbsp; % extract data</div><div>&nbsp; &nbsp; rcord = sscanf(string1(17:24),'%d');</div><div>&nbsp; &nbsp; dcord = sscanf(string1(49:56),'%d');</div><div>&nbsp; &nbsp; % check</div><div>&nbsp; &nbsp; if(rcord*dcord~=0)</div><div>&nbsp; &nbsp; &nbsp; &nbsp; fprintf(fid2,'%s',string1);</div><div>&nbsp; &nbsp; else</div><div>&nbsp; &nbsp; &nbsp; &nbsp; j=j+1;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if(rcord==0); rcord2=CORD21; else; rcord2=rcord; end</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if(dcord==0); dcord2=CORD21; else; dcord2=dcord; end</div><div>&nbsp; &nbsp; &nbsp; &nbsp; fprintf(fid2,'%s%8d%s%8d\n',string1(1:16),rcord2,string1(25:48),dcord2);</div><div>&nbsp; &nbsp; end</div><div>end</div><div><br></div><div><br></div><div>end</div></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

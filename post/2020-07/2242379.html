@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>유기 화합물</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2020-07-19 15:37:45</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">유기 화합물</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref : https://ko.m.wikipedia.org/wiki/%EC%9C%A0%EA%B8%B0_%ED%99%94%ED%95%A9%EB%AC%BC<br><br>유기 화합물(有機化合物, 영어: organic compound)은 구조의 기본골격으로 탄소 원자를 갖는 화합물을 통틀어 부르는 것이다.<br><br>예외로서 흑연과 다이아몬드 등의 탄소의 동소체, 일산화 탄소, 이산화 탄소, 및 탄화 칼슘 등의 금속 탄화염, 사이안화 수소와 금속시안산염, 금속싸이오시안산염은 탄소를 중심으로 한 분자종이나 무기 화합물로 분류한다. <br><br>1828년 프리드리히 뵐러가 인공적으로 요소를 합성하기 전까지, 유기 화합물은 생체가 생산하는 화합 물질이라는 역사적 정의가 존재했기 때문이며 여기에 거론된 탄소화합물은 당시부터 생체가 관여하지 않은 화합물로 발견되었기 때문에 무기 화합물로 분류되었다.<br><br>유기 화합물은 탄소골격의 길이나 분기의 다양성에 제한이 없어 무기 화합물 보다 복잡한 구조를 가질 수 있다. 또한 탄소에 질소, 산소, 황, 인 또는 할로젠 등이 결합하여 만들어지는 작용기도 다양하므로 각각 독특한 특성을 가져 무한한 다양성을 보여 준다. 그 다양성 때문에 유기 화합물은 생물을 구성하는 요소로 없어서는 안 되는 존재이다. 또한 유기 화합물을 유기물로 부르는 경우도 있다. 대표적인 유기 화합물로 단백질, 탄수화물, 지방이 있다.<br></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

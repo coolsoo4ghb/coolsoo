@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>Hydrogen Embrittlement</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2020-08-23 14:49:37</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">Hydrogen Embrittlement</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content">Ref :&nbsp;<a href="http://www.randb.co.kr/wp-content/uploads/2018/04/Hydrogen-Embrittlement.pdf">http://www.randb.co.kr/wp-content/uploads/2018/04/Hydrogen-Embrittlement.pdf</a><div><a href="https://atomic.snu.ac.kr/index.php/%EC%88%98%EC%86%8C%EC%B7%A8%ED%99%94">https://atomic.snu.ac.kr/index.php/%EC%88%98%EC%86%8C%EC%B7%A8%ED%99%94</a></div><div><br></div><div>수소 취화</div><div><br></div><div>금속재료 특히 철강 중에 흡수된 소소에 의하여 강재의 연성과 인성이 저하되고소성변형 없이 파괴되는 경향이 증대되는 현상&nbsp;</div><div><br></div><div>원인&nbsp;</div><div>• 수소가 원자 중 가장 작아 (1.06Å) 금속격자(2∼3Å) 사이를 쉽게 원자상태로뚫고 들어가기 때문&nbsp;</div><div>• 수소발생: 음극전해탈지, 산세, 전기도금</div><div><br></div><div><br></div><div><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 18px; background-color: rgb(255, 255, 255);">Hydrogen Embrittlement. 금속이 수소원자를 포함하는 수용액 또는 가스분위기 중에 놓여 있을 때, 금속내부에 수소가 확산 침입함으로써 연성이 저하하고 취약하게 되는 현상을 말한다.</span></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>

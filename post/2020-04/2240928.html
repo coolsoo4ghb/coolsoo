@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/result.css">
+
+        <title>matlab function, fminunc, fit, fsolve</title>
+    </head>
+    <body>
+        <section id="wrap">
+            <header>
+                <h1 class="logo-title">
+                    <span class="main"><img src="../../images/logo_egloos.png" width="105" height="34" alt="이글루스"></span>
+                </h1>
+                <div class="user-info">
+                    <strong class="name">쿠우울</strong> 님 (<strong class="name">coolsoo</strong>)
+                </div>
+            </header>
+            <main>
+                <article class="post-wrap">
+                    <!-- 게시물 정보 : 날짜 -->
+                    <div class="post-info">
+                        <span class="time">2020-04-01 20:25:59</span>
+                    </div>
+                    <!-- 게시물 제목 -->
+                    <h2 class="post-title">matlab function, fminunc, fit, fsolve</h2>
+                    <!-- 게시물 본문 -->
+                    <div class="post-body">
+                        <div class="content"><div><br></div><div><div>Unconstrained minimization : fminunc</div><div>% minimization</div><div>myfun = @(x) f4_sol_a2g(inic,ax,ay,x);</div><div>options = optimset('LargeScale','off','Display','off','TolFun',1e-8);</div><div>[z,fval] = fminunc(myfun,x0,options);</div><div><br></div><div><br></div><div><div>% minimization</div><div>myfun = @(x) f_sol6(x(1),x(2), ...</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dat_nstep,dat_coder,npoint);</div><div>options = optimoptions('fminunc','Algorithm','quasi-newton', ...</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'OptimalityTolerance',1e-10,'MaxFunctionEvaluation',2000, ...</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'FunctionTolerance',1e-10);</div><div>x0 = [262.145, 111.911];&nbsp;</div><div>% [deg,rad,deg,rad] initial values</div><div>[z,fval,exitflag,output] = fminunc(myfun,x0,options)</div></div><div><br></div><div><div>% local function definition ==============================================</div><div>% define measure to be minized</div><div>function F = f_sol6(SN_a0,EW_a0, ...</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dat_nstep,dat_coder,npoint)</div><div>&nbsp; ~~~</div><div>&nbsp; measure3 = (max(abs(errX)) + max(abs(errY)))/2;</div><div>&nbsp; F = measure3;</div><div>end</div></div><div><br></div><div><br></div><div><br></div><div>Curve fitting : fit</div><div>% curve fitting : z = z0-(rr^2-x^2)^0.5</div><div>%&nbsp; find rr &amp; zz</div><div>%&nbsp; &nbsp;by fitting : comparing z (above formula) &amp; cord(:,3)</div><div>%&nbsp; &nbsp; for given points x (above formula) which is radii</div><div>f = fittype('z0-(rr^2-x^2)^0.5');</div><div>options=fitoptions('Method','NonlinearLeastSquares');</div><div>options.StartPoint=[3.74 3.84];</div><div>[c2, gof2,oput2] = fit(radii,cord(:,3),f,options);</div><div>c2 % print curve fitted paramters</div><div><br></div><div><br></div><div><br></div><div><br></div><div>Nonlinear solve F(x)=0 :fsolve</div></div><div>%</div><div><div>myfun = @(x) f_sol2(x(1),x(2),NstepX,NstepY,Ssn,Sew);</div><div>initial0 = [CodX0,CodY0];</div><div>options = optimoptions('fsolve','Algorithm','levenberg-marquardt', ...</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'FunctionTolerance',1e-8,'StepTolerance',1e-8);</div><div>%options = optimoptions('fsolve','Algorithm','trust-region-dogleg');</div><div>[z,fval,exitflag,opt] = fsolve(myfun,initial0,options)</div></div><div><br></div><div><div>% local function definition ==============================================</div><div>function F = f_sol1(x,y,NstepX,NstepY,Ssn,Sew)</div><div>&nbsp; % x: CodX, y: CodY</div><div>&nbsp; [NX,NY] = GC2f1_coder2step(x,y,Ssn,Sew);</div><div>&nbsp; measure1 = (NX - NstepX)^2 + (NY - NstepY)^2; % to be minimized or zero</div><div>&nbsp; F = measure1;</div><div>end %w/o colon</div></div><div><br></div></div>
+                        <div class="post-footer">
+                            <button class="btn" onclick="button_click();">목록</button>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script>
+            function button_click() {
+                if(history.length > 1) {
+                    history.back();
+                } else {
+                    document.location.href = "../../블로그포스트목록.html";
+                }
+            }
+        </script>
+    </body>
+</html>
